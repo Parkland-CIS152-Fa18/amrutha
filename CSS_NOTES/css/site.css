@@ -1,0 +1,72 @@
+/* some of the selectors just use the element types */
+body{
+    text-align: center;
+}
+
+section {
+    background-color: green; /* the colors can all accept hex or rgb codes instead*/
+    padding: 10px;
+    margin: 0; /* 0 is a measure that does not require a unit*/
+}
+
+p {
+    background-color: aqua ;
+    padding: 10px;
+    margin: 10px;
+    /* sometimes you might want to 
+    play around with the spacing a little.  
+    Notice how you can split up the margin? 
+    Just comment it out while you're testing,
+    but don't forget to un-comment what you
+    want to keep. */
+    /* margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;*/
+}
+
+h2{
+    background-color: black;
+    color: white; /* font color just uses the property "color" */
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* some use an id selector preceded by a # */
+#sub-headings{
+    background-color: purple;
+    margin: 0;
+    padding: 5px;
+}
+
+#container {
+    background-color: green;
+    padding: 1px;
+}
+
+/* others use a class selector preceded by a . */
+.large {
+    font-size: 150%;
+    font-weight: 900;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* and others use combinators, a combination of selectors */
+/* what do these mean? */
+/* can you find a way to make any of these simpler and still
+have the same results? */
+h2.heading-other {
+    background-color: blue;
+}
+
+#container div{
+    background-color: yellow;
+    padding: 8px;
+    margin: 5px;
+}
+
+#container > p {
+    margin: 10px;
+}
